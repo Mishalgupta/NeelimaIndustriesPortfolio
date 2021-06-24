@@ -1,0 +1,125 @@
+/* Servives */
+
+.services {
+    background: #ffffff;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.common {
+    width: 33.33333333333333%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-weight: 1000px;
+    color: #c9000d;
+    font-size: 16px;
+}
+
+.mainHeader {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.mainContent {
+    font-size: 16px;
+    color: #000000;
+}
+
+.commonBorder {
+    background: #9e000b;
+    height: 3px;
+    width: 100px;
+    margin: 30px auto;
+}
+
+.services__box {
+    padding: 40px;
+    background: #c6c6c6;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    transition: all 0.5s linear;
+}
+
+.services__box:hover {
+    background: #ff4a57;
+}
+
+.commonIcons {
+    font-size: 40px;
+    color: #ff4a57;
+    margin-bottom: 15px;
+}
+
+.services__box:hover .commonIcons {
+    color: rgb(0, 0, 0);
+}
+
+.services__box-header {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.services__box-p {
+    font-size: 14px;
+    color: #000000;
+}
+
+@media (max-width: 765px) {
+    .container {
+        width: 100%;
+        padding: 0 50px;
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .navbar__right {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background: #1f2235;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .navbar__right li a {
+        display: block;
+        padding: 20px 0;
+        font-size: 14px;
+    }
+    .toggle {
+        display: flex;
+    }
+    .banner__img img {
+        display: none;
+    }
+    .header__section h1 {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .header__section p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    .common {
+        width: 100%;
+    }
+    .h-650 {
+        height: auto;
+    }
+}
