@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
+  /* margin: 0;
+  padding: 0; */
+  /* box-sizing: border-box; */
+  text-transform: capitalize;
+  /* transition: all .2s linear; */
+  /* text-decoration: none; */
+}
+
+.content {
+  margin-top: -5vh;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/images//home.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  padding: 0 0rem;
+  position: relative;
+  overflow: hidden !important;
+}
+
+.home .banner {
+  color: rgb(255, 255, 255);
+  font-size: 300%;
+  text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.home .slogan {
+  /* padding: 25px 0; */
+  color: #eee;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.home button {
+  height: 4rem;
+  width: 13rem;
+  border-radius: 1.2rem;
+  background: #fff;
+  color: #444;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.home button:hover {
+  letter-spacing: .1rem;
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 200, 255);
+}
+
+.home .wave {
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  background: url("./images/wave.png");
+  background-size: 100rem 11rem;
+  background-repeat: repeat-x;
+  animation: waves 10s linear infinite;
+}
+
+.home .wave2 {
+  animation-direction: reverse;
+  opacity: .2;
+}
+
+.home .wave3 {
+  animation-duration: 4s;
+  opacity: .5;
+}
+
+@keyframes waves {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100rem;
+  }
+}
+
+/* media queries  */
+
+@media (max-width:768px) {
+  html {
+    font-size: 50%;
+  }
+  .home .banner {
+    font-size: 4rem;
+  }
+  .home .slogan {
+    font-size: 1.7rem;
+  }
+  .content {
+    margin-top: -15vh;
+  }
+}
